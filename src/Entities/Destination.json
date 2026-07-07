@@ -1,0 +1,58 @@
+{
+  "name": "Destination",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Destination name"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full destination details in markdown"
+    },
+    "image": {
+      "type": "string",
+      "description": "Main image URL"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "city",
+        "local",
+        "adventure",
+        "food_cafe",
+        "heritage"
+      ],
+      "description": "Destination category"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show as featured destination on the home page"
+    },
+    "best_season": {
+      "type": "string",
+      "description": "Best time to visit"
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Top highlights"
+    }
+  },
+  "required": [
+    "name",
+    "country",
+    "image"
+  ]
+}

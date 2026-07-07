@@ -1,0 +1,68 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Blog post title"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short preview text"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full blog post content in markdown"
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "Cover image URL"
+    },
+    "destination": {
+      "type": "string",
+      "description": "Travel destination name"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "adventure",
+        "culture",
+        "food",
+        "nature",
+        "city",
+        "beach",
+        "mountains"
+      ],
+      "description": "Post category"
+    },
+    "read_time": {
+      "type": "number",
+      "description": "Estimated read time in minutes"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Is this a featured post"
+    },
+    "gallery_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Gallery image URLs"
+    }
+  },
+  "required": [
+    "title",
+    "content",
+    "cover_image"
+  ]
+}

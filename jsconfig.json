@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "paths": {
+      "@/lib/utils": ["src/lib/utils.js"],
+      "@/*": ["src/*"]
+    }
+  }
+}

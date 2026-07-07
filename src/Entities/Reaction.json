@@ -1,0 +1,31 @@
+{
+  "name": "Reaction",
+  "type": "object",
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "blog_post",
+        "destination"
+      ],
+      "description": "Type of entity being reacted to"
+    },
+    "entity_id": {
+      "type": "string",
+      "description": "ID of the entity"
+    },
+    "reaction_type": {
+      "type": "string",
+      "enum": [
+        "like",
+        "love",
+        "wow",
+        "inspire"
+      ],
+      "default": "like",
+      "description": "Type of reaction"
+    },
+    "user_identifier": {
+      "type": "string",
+      "description": "Email or user ID to prevent duplicate reactions"
+ 

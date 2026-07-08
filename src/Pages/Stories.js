@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { base44 } from '../api/base44Client';
+import { base44 } from '../api/supabase';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, ArrowUpRight, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';

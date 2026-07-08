@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Sparkles, Check } from 'lucide-react';
-import { base44 } from '../../api/base44Client';
+import { base44 } from '../../api/supabase';
 import { Input } from '../ui/input';
 
 export default function Newsletter() {

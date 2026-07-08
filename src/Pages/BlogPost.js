@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { base44 } from '../api/base44Client';
+import { base44 } from '../api/supabase';
 import { motion } from 'framer-motion';
 import { Clock, MapPin, ArrowLeft, Calendar, Share2, Image as ImageIcon } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
